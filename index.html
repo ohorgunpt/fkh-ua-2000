@@ -1,0 +1,110 @@
+
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#140c08"><title>FKH UNAIR Angkatan 2000 · Klise Kenangan</title>
+<style>
+:root{color-scheme:dark;--gold:#e2bc7e;--fg:#f5e5c5;--muted:#b9a283}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:radial-gradient(ellipse at 50% 40%,#332117,#0b0705 78%);color:var(--fg);font-family:Arial,Helvetica,sans-serif}button{cursor:pointer;font-family:inherit}button:focus-visible{outline:2px solid var(--gold)}
+.page{width:100%;max-width:100vw;height:100dvh;min-height:0;padding:clamp(8px,1.5vh,16px) clamp(9px,2.2vw,32px);display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:clamp(6px,1.1vh,12px);overflow:hidden}
+.banner{display:grid;grid-template-columns:clamp(60px,10vw,106px) 1fr clamp(60px,10vw,106px);align-items:center;gap:clamp(8px,1.4vw,18px);width:min(100%,1140px);justify-self:center}.logoBox{display:grid;place-items:center}.logoBox img{max-width:100%;width:clamp(54px,8vw,92px);height:auto;display:block;filter:drop-shadow(0 8px 15px rgba(0,0,0,.35))}.logoBox.right img{width:clamp(56px,8.4vw,96px)}
+.titleWrap{text-align:center;min-width:0}.titleWrap .kicker{font-size:clamp(8px,.8vw,11px);letter-spacing:.35em;color:#d3aa76}.titleWrap h1{font:normal clamp(29px,4.6vw,65px)/1.03 Georgia,serif;margin:5px 0 2px}.titleWrap h1 span{color:#e6bd83}.titleWrap p{font:italic clamp(11px,1.25vw,16px) Georgia,serif;color:#bca17c;margin:0}
+.exhibit{min-width:0;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto auto;gap:8px;width:min(100%,1140px);justify-self:center;align-self:stretch}
+.screen{width:100%;min-width:0;min-height:0;overflow:hidden;position:relative;background:#060504;border:1px solid #916b40;border-radius:11px;box-shadow:0 0 0 3px #140d09,0 0 0 4px #674a2e,0 16px 50px #0009}
+.photo-space{position:absolute;inset:9px;overflow:hidden;display:grid;place-items:center;background:#080605}
+.slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 900ms ease;overflow:hidden}.slide.active{opacity:1;z-index:2}.slide img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;transform:scale(.90);transition:transform 9s ease}.slide.active img{transform:scale(1.10)}
+.slide .blur{position:absolute;inset:-12%;background-position:center;background-size:cover;filter:blur(36px) brightness(.38);opacity:.65}
+.photo-space:after{content:'';inset:0;position:absolute;pointer-events:none;box-shadow:inset 0 0 40px #0007;z-index:4}
+.cover{position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at center,#3b2719,#120c09 85%);padding:clamp(7px,2vh,18px);transition:opacity .5s ease,visibility .5s ease}.cover.hidden{opacity:0;visibility:hidden;pointer-events:none}.cover-inner{width:100%;max-width:480px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:clamp(5px,1vh,12px)}.cover h2{font:normal clamp(23px,3.2vw,42px)/1.1 Georgia,serif;color:#f2dfbb;margin:0}.cover h2 span{color:#e4b779}.cover p{font:italic clamp(11px,1.1vw,14px)/1.35 Georgia,serif;color:#ccb18a;margin:0}.cover iframe{display:block;width:100%;min-width:0;height:clamp(145px,21vh,182px);border:0;border-radius:11px;background:#151b2c;box-shadow:0 8px 26px #0007}.cover .hint{font-size:10px;color:#a68b65;line-height:1.4}.secondary{padding:7px 12px;border:1px solid #c6a16d;background:#24170e;color:#f0d19e;border-radius:22px;font-size:11px}
+.rolled{width:100%;height:clamp(94px,14vh,125px);min-width:0;overflow:hidden;position:relative;border:1px solid #986f44;border-radius:5px;background:linear-gradient(#322116,#140d09 20%,#160e09 80%,#332116);box-shadow:0 0 0 2px #090705,inset 0 0 0 1px #513723}.rolled::before,.rolled::after{content:'';position:absolute;left:0;right:0;height:11px;background:repeating-linear-gradient(90deg,#070605 0 18px,#60401e 18px 30px,#100b08 30px 38px);z-index:2;pointer-events:none}.rolled::before{top:1px}.rolled::after{bottom:1px}.film-track{width:100%;height:100%;min-width:0;display:flex;gap:0;overflow:auto hidden;scrollbar-width:none;padding:12px 0;scroll-behavior:smooth}.film-track::-webkit-scrollbar{display:none}.frame{height:100%;flex:0 0 clamp(103px,11vw,133px);border:0;border-right:1px solid #664b30;border-left:1px solid #0c0907;background:#1a110c;position:relative;padding:5px 6px;display:grid;place-items:center}.frame img{width:100%;height:100%;object-fit:contain;background:#0b0907;border:1px solid #735b3c;filter:sepia(.22)}.frame.selected img{border:2px solid #f3d5a2;filter:none;box-shadow:0 0 12px #e4b672a0}.frame:after{content:attr(data-number);position:absolute;right:7px;bottom:7px;background:#100a06b9;font-size:9px;color:#e0bd8c;padding:2px 3px}
+.labels{display:flex;align-items:center;justify-content:space-between;color:#b99b71;font-size:10px;letter-spacing:.11em;gap:8px;min-width:0}.labels #label{font:italic 13px Georgia,serif;color:#dfc297;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bottom{min-width:0;display:grid;gap:9px}.progress{width:100%;height:2px;background:#755a37}.progress div{width:0;height:100%;background:#eac78c}.controls{display:flex;align-items:center;justify-content:space-between;gap:8px}.set{display:flex;align-items:center;gap:8px}.ctl{height:39px;min-width:39px;background:#1c130e;border:1px solid #84633e;border-radius:30px;color:#ebd3ad;padding:0 12px}.ctl.main{background:#e6c697;color:#26170d;font-weight:700;padding:0 20px}.count{color:#dfc18d;font:16px Georgia,serif;margin-left:5px}.footermid{color:#92795b;font-size:10px;letter-spacing:.12em}#status{font-size:10px;line-height:1.2;color:#ac9374;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:11px}
+@media(max-width:700px){.page{gap:5px;padding:8px}.banner{grid-template-columns:54px 1fr 54px;gap:8px}.titleWrap .kicker{font-size:8px;letter-spacing:.23em}.titleWrap h1{font-size:clamp(26px,7vw,38px)}.titleWrap p{font-size:11px}.exhibit{gap:5px}.rolled{height:97px}.frame{flex-basis:95px}.labels span:first-child,.labels span:last-child{display:none}.labels{justify-content:center}.cover iframe{height:clamp(133px,20vh,162px)}.cover-inner{gap:4px}.cover h2{font-size:24px}.cover .hint{font-size:9px}.controls{justify-content:center;flex-wrap:wrap}.footermid{display:none}.set{gap:5px}.ctl{height:36px;min-width:36px;padding:0 10px}.count{font-size:13px}.bottom{gap:6px}}
+@media(max-height:650px){.titleWrap h1{font-size:clamp(26px,4vw,44px)}.rolled{height:84px}.cover h2{font-size:23px}.cover iframe{height:125px}.cover .hint{display:none}.frame{flex-basis:97px}.page{gap:4px}}
+
+/* V9 — Dies Natalis 55 palette, simplified one-title composition */
+:root{color-scheme:light;--gold:#c89a34;--fg:#0a3972;--muted:#527199}
+html,body{background:#f6f9ff;color:#092f65}
+body{background:radial-gradient(ellipse at 50% 9%,#ffffff 0%,#f6f9fd 48%,#e6effc 100%)}
+.page{grid-template-rows:auto minmax(0,1fr);gap:clamp(9px,1.5vh,20px);padding:clamp(10px,1.5vh,18px) clamp(10px,2.6vw,38px) clamp(10px,1.4vh,18px)}
+.banner{width:min(100%,1190px);grid-template-columns:clamp(54px,10vw,108px) minmax(0,1fr) clamp(54px,10vw,108px);gap:clamp(8px,1.8vw,24px);border-bottom:2px solid #e3bf70;padding-bottom:clamp(8px,1.2vh,15px)}
+.logoBox img{width:clamp(52px,8.4vw,90px)}.logoBox.right img{width:clamp(55px,9vw,100px);height:clamp(55px,9vw,100px);object-fit:contain;border-radius:50%;box-shadow:0 5px 18px #11457b22}
+.titleWrap h1{color:#103d7d;font-weight:700;font-size:clamp(25px,4.5vw,62px);line-height:1.1;margin:0;text-shadow:none}
+.titleWrap h1 span{color:#b68a2d}
+.exhibit{width:min(100%,1190px);grid-template-rows:minmax(0,1fr) auto;gap:clamp(9px,1.3vh,15px)}
+.screen{border:3px solid #184c85;border-radius:17px;box-shadow:0 0 0 2px #dfba67,0 16px 44px #0c37662b}
+.photo-space{inset:8px;background:#061c35}
+.slide .blur{filter:blur(36px) brightness(.53);opacity:.5}
+/* More pronounced zoom, with image constrained so no edge is cut */
+.slide img{width:80%;height:80%;object-fit:contain;transform:scale(1.03);transition:none;animation:none}
+.slide.active img{animation:zoomSepanjangFoto 9s linear both}
+@keyframes zoomSepanjangFoto{from{transform:scale(1.03)}to{transform:scale(1.20)}}
+.cover{background:radial-gradient(ellipse at center,#214e82,#0c2750 85%)}
+.cover .sunoCall{font:700 clamp(13px,2vw,19px) Arial,sans-serif;color:#f5db9c;letter-spacing:.13em;margin-bottom:4px}
+.cover .hint{color:#d4dbea}
+.cover .secondary{background:#e5bc6c;color:#123b6c;border-color:#e9c982;font-weight:700}
+.rolled{background:linear-gradient(#224e85,#0a2952 22%,#0d2850 78%,#1a4e8c);border:2px solid #ce9c46;box-shadow:0 0 0 1px #fff,inset 0 0 0 1px #184173}
+.rolled::before,.rolled::after{background:repeating-linear-gradient(90deg,#071323 0 18px,#d3a75f 18px 30px,#09203b 30px 38px)}
+.frame{background:#102c50;border-right:1px solid #a77b3d;border-left:1px solid #061c32}
+.frame img{border-color:#54789c}
+.frame.selected img{border:2px solid #ffe0a6;box-shadow:0 0 16px #f7d188}
+@media(max-width:700px){.page{padding:10px 8px;gap:10px}.banner{grid-template-columns:52px minmax(0,1fr) 52px;gap:6px}.titleWrap h1{font-size:clamp(23px,6.2vw,38px)}.logoBox img{width:49px}.logoBox.right img{width:50px;height:50px}.exhibit{gap:9px}.rolled{height:clamp(90px,13vh,114px)}}
+@media(max-height:650px){.page{gap:5px}.banner{padding-bottom:5px}.titleWrap h1{font-size:clamp(22px,3.8vw,41px)}.rolled{height:80px}}
+
+/* V10: warna biru–kuning UNAIR, teks nostalgia dipulihkan, dan zoom linear 9 detik. */
+:root{--gold:#ffd45d;--fg:#f9fbff;--muted:#b9d1ee}
+html,body{background:#092b60;color:#f9fbff}
+body{background:radial-gradient(ellipse 95% 85% at 52% 6%,#285ca4 0%,#103b83 39%,#071e48 78%,#071734 100%)}
+.page{background:linear-gradient(140deg,#ffffff08,#ffcf4d09 44%,#041c4805)}
+.banner{border-bottom:2px solid #ffd35b}
+.titleWrap .kicker{color:#ffdc7a;font-weight:700;letter-spacing:.18em;font-size:clamp(9px,.88vw,12px);margin-bottom:5px}
+.titleWrap h1{color:#fff;filter:drop-shadow(0 2px 6px #001c4b70)}
+.titleWrap h1 span{color:#ffdb71}
+.exhibit{grid-template-rows:minmax(0,1fr) auto auto;gap:clamp(6px,.9vh,10px)}
+.screen{border-color:#e4b449;box-shadow:0 0 0 2px #f8df8d,0 16px 44px #0007}
+.rolled{border-color:#ffd35b}
+.nostalgia-caption{text-align:center;color:#ffe2a1;font:italic clamp(15px,2vw,22px)/1.2 Georgia,serif;text-shadow:0 2px 8px #001a45a0;letter-spacing:.015em;padding:1px 0 3px}
+.cover{background:radial-gradient(ellipse at center,#2a5a9c 0%,#0f346d 76%,#092552 100%)}
+.cover .sunoCall{color:#ffe09a}
+.cover .secondary{background:#ffdf88;color:#133c78}
+.cover .play-helper{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:10px 18px;border:0;background:transparent;color:#eef5ff;font-weight:700;font-size:clamp(11px,1.4vw,15px);letter-spacing:.03em}.cover .play-helper:hover{opacity:.92}.cover .play-circle{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#ffe394,#e1b95d);color:#143b74;box-shadow:0 8px 18px #001c4b55;font-size:18px;padding-left:3px;flex:0 0 auto}
+@media(max-width:700px){.page{gap:7px}.titleWrap .kicker{font-size:8px;line-height:1.3;letter-spacing:.05em}.nostalgia-caption{font-size:15px}.exhibit{gap:6px}.cover .play-helper{gap:10px;font-size:12px}.cover .play-circle{width:38px;height:38px;font-size:16px}}
+@media(prefers-reduced-motion:reduce){.slide.active img{animation:zoomSepanjangFoto 9s linear both}}
+
+/* V13: definitive zoom and centered typography, no conflicting transform important. */
+.cover .play-instruction{display:block;width:100%;margin:6px auto 0;padding:0;text-align:center;color:#f5e9cf;font:500 clamp(13px,1.5vw,17px)/1.45 Arial,sans-serif}
+.cover .play-instruction span{color:#ffe18b}
+.exhibit>.nostalgia-caption{display:flex!important;align-items:center!important;justify-content:center!important;justify-self:stretch!important;text-align:center!important;width:100%!important;grid-column:1/-1!important;margin:0!important;padding:5px 0!important;color:#17477e!important;font:700 clamp(15px,1.8vw,22px)/1.2 Georgia,serif!important;letter-spacing:.05em;text-transform:uppercase}
+.screen,.photo-space,.slide{overflow:hidden}
+.slide img{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;transform:none!important;transition:none!important;animation:none!important;transform-origin:center center}
+.slide.active img{animation:zoomV13 9s linear forwards!important;transform:none!important}
+@keyframes zoomV13{0%{scale:1}100%{scale:1.2}}
+@media(max-width:700px){.exhibit>.nostalgia-caption{font-size:15px!important}}
+
+/* V14: slogan emas */
+.exhibit > .nostalgia-caption { color:#D4AF37 !important; text-shadow:0 1px 1px #65430d55,0 2px 7px #d4af3730 !important; }
+</style></head><body><main class="page">
+<header class="banner">
+  <div class="logoBox left"><img src="unair-logo.png" alt="Logo Universitas Airlangga"></div>
+  <div class="titleWrap"><div class="kicker">SELEMBAR MASA LALU, SERIBU CERITA</div><h1>FKH UNAIR <span>Angkatan 2000</span></h1></div>
+  <div class="logoBox right"><img src="logo-veteriner.png" alt="Simbol veteriner huruf V, tongkat dan ular"></div>
+</header>
+<section class="exhibit"><div class="screen"><div class="photo-space" id="space"><div class="slide" id="slideA"><div class="blur"></div><img alt="Foto FKH UNAIR"></div><div class="slide" id="slideB"><div class="blur"></div><img alt="Foto FKH UNAIR"></div></div><div class="cover" id="cover"><div class="cover-inner"><p class="sunoCall">♫ &nbsp; PUTAR ALBUM KENANGAN</p><iframe id="suno" src="https://suno.com/embed/4434c6f3-6ed6-4309-9480-c38799ce75e6" title="Pemutar Menenun Asa di Suno" allow="autoplay;encrypted-media" loading="eager"></iframe><p class="play-instruction">Klik logo play <span aria-hidden="true">▶</span> untuk melihat album</p></div></div></div><div class="rolled" aria-label="Pita klise film 35 mm"><div class="film-track" id="filmtrack"></div></div><div class="nostalgia-caption">SATU ANGKATAN SEJUTA CERITA</div></section></main>
+<script>
+const photos=Array.from({length:16},(_,i)=>`foto/${String(i+1).padStart(2,'0')}.jpg`);
+const $=id=>document.getElementById(id);let idx=0,active='A',playing=false,started=false,period=9000,timer=0,startTime=0,changing=false;
+function strip(){photos.forEach((src,i)=>{const b=document.createElement('button');b.className='frame';b.dataset.number=String(i+1).padStart(2,'0');b.title='Foto '+(i+1);let img=document.createElement('img');img.src=src;img.loading='lazy';img.alt='Foto '+(i+1);b.append(img);b.onclick=()=>{if(!started)start();change(i)};$('filmtrack').append(b)})}
+function paint(){let count=String(idx+1).padStart(2,'0')+' / 16';[...$('filmtrack').children].forEach((e,i)=>e.classList.toggle('selected',i===idx));const node=$('filmtrack').children[idx];if(node){const scroll=$('filmtrack');scroll.scrollTo({left:Math.max(0,node.offsetLeft+node.offsetWidth/2-scroll.clientWidth/2),behavior:'smooth'})}}
+function loadImage(slot,src){return new Promise(resolve=>{const image=slot.querySelector('img');image.onload=resolve;image.onerror=resolve;image.src=src;slot.querySelector('.blur').style.backgroundImage=`url('${src}')`;if(image.complete)resolve()})}
+async function change(i){if(changing)return;changing=true;const target=(i+photos.length)%photos.length;let next=active==='A'?'B':'A';await loadImage($('slide'+next),photos[target]);$('slide'+next).classList.add('active');$('slide'+active).classList.remove('active');active=next;idx=target;paint();clock();setTimeout(()=>changing=false,600)}
+function clock(){clearTimeout(timer);startTime=performance.now();if(playing)timer=setTimeout(()=>change(idx+1),period)}
+function state(){}
+function start(){if(!started){started=true;playing=true;$('cover').classList.add('hidden');change(0);state()}else if(!playing){playing=true;clock();state()}}
+function pause(){playing=false;clearTimeout(timer);state()}
+let lastFocus=false;function check(){let focus=document.activeElement===$('suno');if(focus&&!lastFocus&&!started)start();lastFocus=focus}
+window.addEventListener('blur',()=>setTimeout(check,80));window.addEventListener('focus',check);setInterval(check,350);
+
+
+
+
+
+
+
+strip();paint();
+</script></body></html>
